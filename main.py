@@ -26,13 +26,8 @@ import numpy as np
 import pandas as pd
 import time
 import seaborn as sns
-from matplotlib.colors import ListedColormap
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score, plot_confusion_matrix
-from scipy.stats import norm, boxcox
-from collections import Counter
-from scipy import stats
-from pandas_profiling import ProfileReport
 import warnings
 
 warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -40,21 +35,21 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 # Load dataset
 dataset = pd.read_csv('winequality-red.csv')
 
-
-# print(dataset.describe())
-
+print(dataset.describe())
 
 # # Check quality distribution
-# sns.set_style('whitegrid')
-# plt.figure(figsize=(4, 4))
-# sns.countplot(x="quality", data=dataset, palette='Accent')
+sns.set_style('whitegrid')
+plt.figure(figsize=(4, 4))
+sns.countplot(x="quality", data=dataset, palette='Accent')
 
 # # Check correlation matrix
-#
-# plt.figure(figsize=(8, 8))
-# matrix = np.triu(dataset.corr())
-# sns.heatmap(dataset.corr(), annot=True,linewidth=.8, mask=matrix, cmap="mako");
-# #plt.show()
+
+plt.figure(figsize=(8, 8))
+matrix = np.triu(dataset.corr())
+sns.heatmap(dataset.corr(), annot=True, linewidth=.8, mask=matrix, cmap="mako");
+
+
+# plt.show()
 
 
 # Remove outliers
