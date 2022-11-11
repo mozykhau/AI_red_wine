@@ -1,10 +1,10 @@
 Red Wine Classifier
 -----------------------------------------------------------------------------------------------------------------------
-Dataset https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009
+Dataset: https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009
 EE4686 Machine Learning, a Bayesian Perspective
 Assignment 3
 -----------------------------------------------------------------------------------------------------------------------
-Author: Maksym Kyryliuk 5173986
+Author: Maksym Kyryliuk
 Email: m.s.kyryliuk@student.tudelft.nl
 Date: 08.07.2021
 -----------------------------------------------------------------------------------------------------------------------
